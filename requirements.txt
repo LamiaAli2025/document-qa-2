@@ -1,2 +1,6 @@
 streamlit
-openai
+google-generativeai
+sentence_transformers
+faiss-cpu
+python-dotenv
+tf-keras
