@@ -175,12 +175,12 @@ class OCR_RAG_System:
                 self.index = data['index']
 
 # UI Configuration
-st.set_page_config(page_title="Arabic Handwriting Extraction", page_icon="??")
-st.title("?? Arabic Handwriting Extraction")
+st.set_page_config(page_title="Arabic Handwriting Extraction", page_icon="Ar")
+st.title("Arabic Handwriting Extraction")
 
 # Model selection
 model_choice = st.radio("Select recognition model:", 
-                        ["Google Gemini OCR", "RAG Arabic Handwriting with Gemini OCR Model", "Learnned Model"])
+                        ["Google Gemini OCR", "RAG Arabic Handwriting with Gemini OCR Model", "Fine Tunning Model"])
 
 # Image uploader
 uploaded_file = st.file_uploader(
@@ -238,9 +238,9 @@ if uploaded_file:
         
             except Exception as e:
                 st.error(f"Processing Error: {str(e)}")
-        elif model_choice == "Learnned Model":
+        elif model_choice == "Fine Tunning Model":
             try:        
-                st.subheader("Extracted Text (Learnned Model) ...... comming soon")
+                st.subheader("Extracted Text (Fine Tunning Model) ...... comming soon")
                 
             except Exception as e:
                 st.error(f"Processing Error: {str(e)}")    
